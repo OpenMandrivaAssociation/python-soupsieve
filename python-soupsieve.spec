@@ -3,13 +3,13 @@
 %global with_tests 0
 
 Name:           python-%{pypi_name}
-Version:        1.9.1
+Version:	1.9.2
 Release:        %mkrel 2
 Summary:        A modern CSS selector implementation for Beautiful Soup
 Group:          Development/Python
 License:        MIT
 URL:            https://github.com/facelessuser/soupsieve
-Source0:        %{pypi_name}-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/7b/cc/acacce585e51876edee229659511768bab1fee64785d315c3607790d9736/soupsieve-1.9.2.tar.gz
 BuildArch:      noarch
  
 BuildRequires:  python2-devel
