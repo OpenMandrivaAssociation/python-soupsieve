@@ -15,6 +15,7 @@ BuildArch:      noarch
 BuildRequires:  python3-devel
 BuildRequires:  python%{pyver}dist(setuptools)
 BuildRequires:  python%{pyver}dist(pip)
+BuildRequires:  python%{pyver}dist(hatchling)
 
 %description
 Soup Sieve is a CSS selector library designed to be used with Beautiful Soup 4.
