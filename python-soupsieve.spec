@@ -49,5 +49,5 @@ rm -rf %{pypi_name}.egg-info
 %files
 %license LICENSE.md docs/src/markdown/about/license.md
 %doc README.md
-%{python3_sitelib}/%{pypi_name}
-%{python3_sitelib}/%{pypi_name}-%{version}-py*.*.egg-info
+%{python_sitelib}/%{pypi_name}
+%{python_sitelib}/%{pypi_name}-%{version}.dist-info
