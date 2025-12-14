@@ -13,7 +13,8 @@ Source0:	https://files.pythonhosted.org/packages/source/s/soupsieve/soupsieve-%{
 BuildArch:      noarch
  
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(setuptools)
+BuildRequires:  python%{pyver}dist(setuptools)
+BuildRequires:  python%{pyver}dist(pip)
 
 %description
 Soup Sieve is a CSS selector library designed to be used with Beautiful Soup 4.
