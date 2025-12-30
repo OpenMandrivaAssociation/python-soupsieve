@@ -4,7 +4,7 @@
 
 Name:           python-%{pypi_name}
 Version:	2.8
-Release:	1
+Release:	2
 Summary:        A modern CSS selector implementation for Beautiful Soup
 Group:          Development/Python
 License:        MIT
