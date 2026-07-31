@@ -3,8 +3,8 @@
 %global with_tests 0
 
 Name:           python-%{pypi_name}
-Version:	2.8
-Release:	2
+Version:	2.9.1
+Release:	1
 Summary:        A modern CSS selector implementation for Beautiful Soup
 Group:          Development/Python
 License:        MIT
@@ -35,7 +35,7 @@ non-browser environment. Selectors that cannot provide meaningful functionality
 simply do not match anything.
 
 %prep
-%autosetup -n %{pypi_name}-%{version}
+%autosetup -n soupsieve-2.9.1
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
