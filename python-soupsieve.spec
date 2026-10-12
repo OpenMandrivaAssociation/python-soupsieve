@@ -3,7 +3,7 @@
 %global with_tests 0
 
 Name:           python-%{pypi_name}
-Version:	2.9.1
+Version:	3.0.3
 Release:	1
 Summary:        A modern CSS selector implementation for Beautiful Soup
 Group:          Development/Python
