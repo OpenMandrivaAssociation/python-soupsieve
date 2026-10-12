@@ -12,10 +12,8 @@ URL:            https://github.com/facelessuser/soupsieve
 Source0:	https://files.pythonhosted.org/packages/source/s/soupsieve/soupsieve-%{version}.tar.gz
 BuildArch:      noarch
  
-BuildRequires:  python3-devel
-BuildRequires:  python%{pyver}dist(setuptools)
-BuildRequires:  python%{pyver}dist(pip)
-BuildRequires:  python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(hatchling)
 
 %description
 Soup Sieve is a CSS selector library designed to be used with Beautiful Soup 4.
@@ -35,7 +33,7 @@ non-browser environment. Selectors that cannot provide meaningful functionality
 simply do not match anything.
 
 %prep
-%autosetup -n soupsieve-2.9.1
+%autosetup -n soupsieve-%{version}
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
 
