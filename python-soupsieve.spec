@@ -4,7 +4,7 @@
 
 Name:           python-%{pypi_name}
 Version:	3.0.3
-Release:	1
+Release:	2
 Summary:        A modern CSS selector implementation for Beautiful Soup
 Group:          Development/Python
 License:        MIT
@@ -12,7 +12,9 @@ URL:            https://github.com/facelessuser/soupsieve
 Source0:	https://files.pythonhosted.org/packages/source/s/soupsieve/soupsieve-%{version}.tar.gz
 BuildArch:      noarch
  
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(hatchling)
 
 %description
@@ -38,10 +40,10 @@ simply do not match anything.
 rm -rf %{pypi_name}.egg-info
 
 %build
-%py3_build
+%py_build
 
 %install
-%py3_install
+%py_install
 
 
 %files
